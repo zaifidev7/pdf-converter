@@ -1,0 +1,25 @@
+{
+  "name": "file-to-pdf-converter",
+  "version": "1.0.0",
+  "description": "Universal file to PDF converter — supports DOCX, XLSX, PPTX, images, TXT, HTML, Markdown",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.2",
+    "pdfkit": "^0.14.0",
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["pdf", "converter", "docx", "xlsx", "pptx", "libreoffice"],
+  "license": "MIT"
+}

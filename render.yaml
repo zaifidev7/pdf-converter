@@ -1,0 +1,18 @@
+# render.yaml
+# This file tells Render.com HOW to deploy our app for FREE.
+# Render reads this file automatically when you connect your GitHub repo.
+
+services:
+  - type: web
+    name: file-to-pdf-converter
+    env: node
+    plan: free          # Free tier — no credit card needed
+    buildCommand: |
+      apt-get update && apt-get install -y libreoffice
+      npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
