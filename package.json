@@ -8,11 +8,14 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "archiver": "^7.0.1",
+    "express": "^4.22.1",
+    "ghostscript-node": "^1.5.0",
+    "marked": "^11.1.1",
     "multer": "^1.4.5-lts.1",
-    "sharp": "^0.33.2",
+    "pdf-lib": "^1.17.1",
     "pdfkit": "^0.14.0",
-    "marked": "^11.1.1"
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
@@ -20,6 +23,13 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["pdf", "converter", "docx", "xlsx", "pptx", "libreoffice"],
+  "keywords": [
+    "pdf",
+    "converter",
+    "docx",
+    "xlsx",
+    "pptx",
+    "libreoffice"
+  ],
   "license": "MIT"
 }
